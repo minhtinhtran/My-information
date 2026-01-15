@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góc Nhỏ Của Minh Tính</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sun-warm: #ffedbc; 
+            --sky-soft: #a1c4fd; 
+            --text-color: #4a4a4a;
+            --white: #ffffff;
+            --border-style: 2px solid #5d5d5d;
+        }
+
+        body {
+            background: linear-gradient(120deg, var(--sun-warm) 0%, #fef9e7 100%);
+            color: var(--text-color);
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .main-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .avatar-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: var(--border-style);
+            object-fit: cover;
+            background: var(--white);
+            padding: 5px;
+            box-shadow: 5px 5px 0px var(--sky-soft);
+        }
+
+        h1 { font-size: 1.8rem; margin: 15px 0 5px; color: #333; }
+        .mood-tag { font-style: italic; color: #777; font-size: 0.9rem; }
+
+        .daily-section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .story-card {
+            background: var(--white);
+            border: var(--border-style);
+            border-radius: 15px;
+            padding: 25px;
+            position: relative;
+            transition: 0.3s;
+            box-shadow: 8px 8px 0px rgba(0,0,0,0.05);
+        }
+
+        .story-card:hover {
+            transform: scale(1.02);
+            box-shadow: 10px 10px 0px var(--sky-soft);
+        }
+
+        .time-label {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: var(--sky-soft);
+            color: white;
+            padding: 2px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border: var(--border-style);
+        }
+
+        .story-card h3 {
+            margin-top: 10px;
+            color: #0077b6;
+            font-size: 1.2rem;
+        }
+
+        .hobby-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .hobby-item {
+            background: #f0f0f0;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            border: 1px solid #ddd;
+        }
+
+        /* Style cho danh sách thành tựu */
+        .achievement-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
+        }
+
+        .achievement-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+
+        .quote-box {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+            padding: 30px;
+            border-left: 5px solid var(--sun-warm);
+            background: rgba(255, 255, 255, 0.5);
+            margin: 40px 0;
+            border-radius: 0 20px 20px 0;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5rem; }
+            .story-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <header>
+            <img src="avata.jpeg" alt="Minh Tính" class="avatar-circle">
+            <h1>Hé lô, mình là Tính!</h1>
+            <div class="mood-tag">"Chì là một cậu sinh viên thích tận hưởng cuộc sống mộc mạc."</div>
+        </header>
+
+        <div class="quote-box">
+            "Hãy tìm vẻ đẹp trong sự không hoàn hảo, vô thường và giản dị của cuộc sống (Wabi-Sabi)."
+        </div>
+
+        <div class="daily-section">
+            
+            <div class="story-card">
+                <span class="time-label">My Vibe</span>
+                <h3>Lúc rảnh mình làm gì?</h3>
+                <p>Mỗi khi có thời gian rảnh, mình thường đắm mình vào thế giới game, cày những bộ phim yêu thích hoặc đơn giản là bật nhạc lên và "chill".</p>
+                <div class="hobby-list">
+                    <span class="hobby-item">🎮 Gaming</span>
+                    <span class="hobby-item">🎵 Music</span>
+                    <span class="hobby-item">🍿 Movie Night</span>
+                </div>
+            </div>
+
+            <div class="story-card">
+                <span class="time-label">Student Life</span>
+                <h3>Chuyện học hành</h3>
+                <p>Hiện tại mình đang là sinh viên năm 2 tại Đại học Cần Thơ. Ngành Hệ thống thông tin (CLC) cũng có nhiều cái hay, mình vẫn đang tò mò khám phá nó mỗi ngày và đôi lúc cảm giác bất lực với nó ^^</p>
+            </div>
+
+            <div class="story-card">
+                <span class="time-label">About Me</span>
+                <h3>Profile & Nhìn lại 2025</h3>
+                <p><b>Năm sinh:</b> 2006 | <b>Cung:</b> Bạch Dương ♈</p>
+                <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+                <p style="font-weight: bold; margin-bottom: 5px;">Thành tựu đáng nhớ trong năm 2025:</p>
+                <ul class="achievement-list">
+                    <li>Vượt qua năm nhất CTU đầy thử thách.</li>
+                    <li>Đạt được bằng lái xe B2, và bằng tiếng anh B1 vẫn đang cố gắng đạt B2</li>
+                    <li>Kết nối được thêm nhiều người bạn cùng chí hướng.</li>
+                    <li>Cân bằng tốt giữa việc học và đam mê cá nhân.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <footer style="text-align: center; margin-top: 50px; padding-bottom: 30px; font-size: 0.8rem; color: #888;">
+            © 2026 - Made by Minh Tính with ☀️
+        </footer>
+    </div>
+
+</body>
+</html>
